@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révision Langue - Bac Maroc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: #333;
+        }
+        .header-title {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2.5rem 1rem;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 2rem;
+        }
+        .card-custom {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s;
+        }
+        .card-custom:hover {
+            transform: translateY(-3px);
+        }
+        .badge-rule {
+            background-color: #e8f4f8;
+            color: #2980b9;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+        .example-box {
+            background-color: #f1f8ff;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-title text-center">
+    <h1 class="fw-bold">Fiches de Langue & Grammaire - 1er Bac</h1>
+    <p class="lead mb-0">La Cause, La Conséquence, Le But et Les Formules d'Indéfinition (Quel que, Qui que...)</p>
+</div>
+
+<div class="container my-4">
+    <!-- Barre de recherche -->
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-8">
+            <input type="text" id="searchInput" onkeyup="searchCards()" class="form-control form-control-lg shadow-sm" placeholder="Rechercher un outil (ex: parce que, quel que, afin de, car)...">
+        </div>
+    </div>
+
+    <!-- Section 1: La Cause -->
+    <div class="card card-custom p-4 lesson-card">
+        <h3 class="text-primary"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>I. L'expression de la Cause (السبب)</h3>
+        <hr>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">1. Groupe Nominal (GN)</span>
+                    <p class="mt-2 mb-1"><strong>Outils:</strong> Grâce à (+), À cause de (-), Faute de, En raison de.</p>
+                    <div class="example-box">
+                        <em>Ex: Il a réussi <strong>grâce à</strong> son travail.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">2. Subordonnée (Indicatif)</span>
+                    <p class="mt-2 mb-1"><strong>Outils:</strong> Parce que, Puisque, Comme (en début de phrase).</p>
+                    <div class="example-box">
+                        <em>Ex: <strong>Comme</strong> il fait beau, nous sortons.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">3. Coordination</span>
+                    <p class="mt-2 mb-1"><strong>Outils:</strong> Car, En effet.</p>
+                    <div class="example-box">
+                        <em>Ex: Il ne sort pas <strong>car</strong> il est malade.</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: La Conséquence -->
+    <div class="card card-custom p-4 lesson-card">
+        <h3 class="text-success"><i class="fa-solid fa-arrow-right-from-bracket me-2"></i>II. L'expression de la Conséquence (النتيجة)</h3>
+        <hr>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">1. Courant & Familier</span>
+                    <p class="mt-2 mb-1"><strong>Outils:</strong> Donc, Alors, Du coup, C'est pour ça que.</p>
+                    <div class="example-box">
+                        <em>Ex: J'ai raté mon train, <strong>du coup</strong> je suis en retard.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">2. Registre Soutenu</span>
+                    <p class="mt-2 mb-1"><strong>Outils:</strong> Par conséquent, Dès lors, Ainsi.</p>
+                    <div class="example-box">
+                        <em>Ex: Le magasin est fermé, <strong>par conséquent</strong> nous reviendrons.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">3. Intensité / Quantité</span>
+                    <p class="mt-2 mb-1"><strong>Outils:</strong> Si... que, Tellement... que, Au point que.</p>
+                    <div class="example-box">
+                        <em>Ex: Il court <strong>si</strong> vite <strong>qu'</strong>il gagne toujours.</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Le But -->
+    <div class="card card-custom p-4 lesson-card">
+        <h3 class="text-warning text-dark"><i class="fa-solid fa-bullseye me-2"></i>III. L'expression du But (الهدف)</h3>
+        <hr>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">1. Même Sujet -> Infinitif</span>
+                    <p class="mt-2 mb-1"><strong>Outils:</strong> Pour, Afin de, De peur de, Dans le but de.</p>
+                    <div class="example-box">
+                        <em>Ex: Je travaille <strong>pour</strong> réussir.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">2. Sujets Différents -> Subjonctif</span>
+                    <p class="mt-2 mb-1"><strong>Outils:</strong> Pour que, Afin que, De crainte que (+ ne explétif).</p>
+                    <div class="example-box">
+                        <em>Ex: Je te donne cette carte <strong>pour que</strong> tu puisses entrer.</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Mots Indéfinis & Homophones -->
+    <div class="card card-custom p-4 lesson-card">
+        <h3 class="text-danger"><i class="fa-solid fa-cube me-2"></i>IV. Mots d'Indéfinition & Subordonnées (Quel que, Qui que...)</h3>
+        <hr>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">Quel que / Quelle que (+ Subjonctif)</span>
+                    <p class="mt-2 mb-1">S'accorde en genre et en nombre avec le sujet qui suit.</p>
+                    <div class="example-box">
+                        <em>Ex: <strong>Quel que</strong> soit votre choix. / <strong>Quelles que</strong> soient vos raisons.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">Quelque / Quelques</span>
+                    <p class="mt-2 mb-1">Invariable devant un adjectif ou un nombre (environ) / Variable devant un nom.</p>
+                    <div class="example-box">
+                        <em>Ex: J'ai acheté <strong>quelques</strong> livres. / Il a <strong>quelque</strong> 100 dirhams.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">Qui que (Personne)</span>
+                    <p class="mt-2 mb-1">S'emploie avec le Subjonctif.</p>
+                    <div class="example-box">
+                        <em>Ex: <strong>Qui que</strong> tu sois, respecte la loi.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">Quoi que (Chose)</span>
+                    <p class="mt-2 mb-1">Signifie "quelle que soit la chose".</p>
+                    <div class="example-box">
+                        <em>Ex: <strong>Quoi que</strong> tu fasses, fais-le bien.</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-white h-100">
+                    <span class="badge-rule">Où que (Lieu)</span>
+                    <p class="mt-2 mb-1">S'emploie avec le Subjonctif.</p>
+                    <div class="example-box">
+                        <em>Ex: <strong>Où que</strong> tu ailles, je serai là.</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-4 text-muted border-top">
+    <p>© 2026 - Fiche de Révision Français 1er Bac Maroc</p>
+</footer>
+
+<script>
+    function searchCards() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let cards = document.getElementsByClassName('lesson-card');
+        
+        for (let i = 0; i < cards.length; i++) {
+            let text = cards[i].innerText.toLowerCase();
+            if (text.includes(input)) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
